@@ -1,7 +1,7 @@
 .. _era:
 
 ---
-Era
+Era 数据库管理
 ---
 
 *The estimated time to complete this lab is 60 minutes.*
