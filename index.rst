@@ -21,7 +21,7 @@
   prism_pro_resource_planning/prism_pro_resource_planning
   prism_pro_xplay/prism_pro_xplay
 
-  .. toctree::
+.. toctree::
   :maxdepth: 2
   :caption: Prism Pro
   :name: _prism_pro
@@ -29,7 +29,7 @@
 
    era/era
 
-//.. toctree::
+  .. toctree::
   :maxdepth: 2
   :caption:  Files Labs
   :name: _files_labs
@@ -41,7 +41,7 @@
   file_analytics_deploy/file_analytics_deploy
   file_analytics_scan/file_analytics_scan
 
-//.. toctree::
+  .. toctree::
   :maxdepth: 2
   :caption: Calm
   :name: _calm
@@ -53,7 +53,7 @@
   calm_linux/calm_linux
   calm_win/calm_win
 
-.. toctree::
+  .. toctree::
   :maxdepth: 2
   :caption: Flow
   :name: _flow
