@@ -218,40 +218,40 @@ Era可用于在已注册的Nutanix集群上提供数据库服务器和数据库�
 
 .. figure:: images/4g2.png
 
-19. 完成后, 选择 **Dashboard** from the drop down menu and note your new **Source Database**.
+完成后, 选择 **Dashboard** 菜单并注意到在 **Source Database**中已经有了一个新的数据库。
 
 .. figure:: images/4i2.png
 
-You should also be able to see the *Initials*-**DBServer** VM running within Prism.
+您还应该能够在prism中看到所运行的 *Initials*-**DBServer**。
 
-Connecting to the Database
+连接并管理Database
 ++++++++++++++++++++++++++
 
-Now that Era has successfully provisioned a database instance, you will connect to the instance and verify the database was created.
+现在Era已经成功地提供了一个数据库实例，您可连接到该实例并验证是否创建了数据库。
 
-Select **Era > Databases** from the drop down menu.
+从下拉菜单选择 **Era > Databases**。
 
-Under **Sources**, click the name of your database.
+在**Sources**中，点击您所部署的数据库.
 
 .. figure:: images/5a2.png
 
-Note the IP Address of your **Database Server**.
+注意查看您创建的 **Database Server** 的IP地址。
 
 .. figure:: images/5b.png
 
-Using *Initials*\ **-Windows-ToolsVM**, open **pgAdmin**.
+使用 *Initials*\ **-Windows-ToolsVM**, 打开 **pgAdmin**.
 
 .. note::
 
   If installed, you can also use a local instance of pgAdmin. The Tools VM is provided to ensure a consistent experience.
 
-Under **Browser**, right-click **Servers** and select **Create > Server...**.
+在 **Browser**下面, 右击 **Servers** 并选择 **Create > Server...** .
 
 .. figure:: images/5c.png
 
-On the **General** tab, provide your database server name (e.g. *Initials*-**DBServer**).
+在 **General** 选项, 提供您数据库服务器名称 (e.g. *Initials*-**DBServer**).
 
-On the **Connection** tab, fill out the following fields:
+在 **Connection** 选项, 输入以下信息:
 
 - **Hostname/IP Address** - *Initials*-DBServer IP Address
 - **Port** - 5432
@@ -261,7 +261,7 @@ On the **Connection** tab, fill out the following fields:
 
 .. figure:: images/5d2.png
 
-Expand *Initials*\ **-DBServer > Databases** and note an empty database has been created by Era.
+展开 *Initials*\ **-DBServer > Databases** a并注意到Era已经部署了一个空的数据库。
 
 .. figure:: images/5h2.png
 
@@ -310,12 +310,12 @@ Expand *Initials*\ **-DBServer > Databases** and note an empty database has been
 
   You can view the imported data by right-clicking **table1** and selecting **View/Edit Data > All Rows**.
 
-Cloning Your PostgreSQL Source
-++++++++++++++++++++++++++++++
+克隆您的 PostgreSQL 资源
++++++++++++++++++++++++
 
-Now that you have created a source database, you can easily clone it using Era Time Machine. Database clones are helpful for development and testing purposes, allowing non-production environments to utilize product data without impacting production operations. Era clones utilize Nutanix-native copy-on-write cloning technology, allowing for zero-byte database clones. This space efficiency can significantly lower storage costs for environments supporting large numbers of database clones.
+现在您已经创建了一个源数据库，您可以使用Era Time Machine轻松地克隆它。数据库克隆有助于开发和测试目的，允许非生产环境在不影响生产操作的情况下利用生产数据。Era克隆利用了nutanix本地写时复制克隆技术，允许零字节的数据库克隆。这种空间效率可以显著降低支持大量数据库克隆的环境的存储成本。
 
-In **Era > Time Machines**, select the Time Machine instance for your source database.
+在 **Era > Time Machines**, 为你的数据库 Time Machine instance for your source database.
 
 .. figure:: images/16a2.png
 
