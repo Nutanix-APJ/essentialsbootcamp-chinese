@@ -24,7 +24,7 @@
 .. toctree::
   :maxdepth: 2
   :caption: Era
-  :name: era
+  :name: _era
   :hidden:
 
    era/era
@@ -40,12 +40,6 @@
   flow_secure_app/flow_secure_app
   flow_isolate_environments/flow_isolate_environments
   flow_quarantine_vm/flow_quarantine_vm
-
-.. toctree::
-  :maxdepth: 2
-  :caption: Optional Labs
-  :name: _optional_labs
-  :hidden:
 
 
 .. toctree::
