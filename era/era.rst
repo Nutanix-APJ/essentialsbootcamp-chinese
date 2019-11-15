@@ -315,33 +315,33 @@ Era可用于在已注册的Nutanix集群上提供数据库服务器和数据库�
 
 现在您已经创建了一个源数据库，您可以使用Era Time Machine轻松地克隆它。数据库克隆有助于开发和测试目的，允许非生产环境在不影响生产操作的情况下利用生产数据。Era克隆利用了nutanix本地写时复制克隆技术，允许零字节的数据库克隆。这种空间效率可以显著降低支持大量数据库克隆的环境的存储成本。
 
-在 **Era > Time Machines**, 为你的数据库 Time Machine instance for your source database.
+在 **Era > Time Machines**, 为你的数据库实例选择 Time Machine instance，如以下图中的XYZ_LabDB_tm。
 
 .. figure:: images/16a2.png
 
-Click **Snapshot** and enter **First** as the **Snapshot Name**.
+点击 **Snapshot** 并输入 **First** 作为 **Snapshot Name**.
 
 .. figure:: images/17a.png
 
-Click **Create**.
+点击 **Create**.
 
-You can monitor the **Create Snapshot** job in **Era > Operations**.
+你可以在 **Era > Operations** 监控 **Create Snapshot** 执行作业 .
 
 .. figure:: images/18a2.png
 
-After the snapshot job completes, select the Time Machine instance for your source database in **Era > Time Machines** and click **Clone Database**.
+在快照作业创建完后, 在 **Era > Time Machines** 选择Time Machine instance 并点击 **Clone Database**.
 
-On the **Time** tab, select **Snapshot > First**.
+在 **Time** 选择 **Snapshot > First**.
 
 .. note::
 
-  Without creating manual snapshots, Era also offers the ability to clone a database based on **Point in Time** increments including Continuous (Every Second), Daily, Weekly, Monthly, or Quarterly. Availability is controlled by the SLA of the source.
+  无需创建手动快照，Era还提供了基于时间增量点(包括连续的(每秒钟)、每日、每周、每月或每季)克隆数据库的能力。可用性由源的SLA控制。
 
 .. figure:: images/19a2.png
 
-Click **Next**.
+点击 **Next**.
 
-On the **Database Server** tab, fill out the following fields:
+在 **Database Server** 输入以下信息：
 
 - **Database Server** - Create New Server
 - **VM Name** - *Initials*-DBServer-Clone
@@ -355,9 +355,9 @@ On the **Database Server** tab, fill out the following fields:
 
 .. figure:: images/20a2.png
 
-Click **Next**.
+点击 **Next**.
 
-On the **Database Server** tab, fill out the following fields:
+在 **Database Server** 页面，输入以下信息:
 
 - **Name** - *Initials*\_LabDB_Clone
 - **Description** - (Optional) Description
@@ -366,32 +366,30 @@ On the **Database Server** tab, fill out the following fields:
 
 .. figure:: images/21a2.png
 
-Click **Clone**.
+点击 **Clone**.
 
-The cloning process will take approximately the same amount of time as provisioning the original database and can be monitored in **Era > Operations**.
-
-While waiting for the clone to complete, explore **Era > SLAs** to understand the differences between standard SLAs offered by Era, or create your own custom SLA.
+克隆过程将花费与提供原始数据库大致相同的时间，并且可以在 **Era > Operations** 中进行监视。在等待克隆完成的同时，探索 **Era > SLAs**，以了解Era提供的标准SLA之间的差异，或者创建您自己的定制SLA。
 
 .. figure:: images/21b.png
 
-Following the completion of the clone operation, you can connect to the clone instance as described in the previous section, `Connecting to the Database`_.
+在完成克隆操作之后，您可以按照前一节中描述的那样连接到克隆实例，并连接到数据库。, `Connecting to the Database`_.
 
 .. figure:: images/23a2.png
 
-The newly provisioned clone is now ready to be used.
+新创建的克隆数据库现在可以使用了。
 
-Refreshing A Cloned Database
+刷新克隆数据库
 ++++++++++++++++++++++++++++
 
-The ability to easily refresh a cloned database using new data from the source database improves development, test, and other use cases by ensuring they have access to new and relevant data. In this section you will add a new table for storing data to your source database, and refresh the existing clone.
+使用源数据库中的新数据轻松刷新克隆数据库的能力通过确保它们能够访问新的相关数据，从而改进了开发、测试和其他用例。在本节中，您将添加一个用于将数据存储到源数据库的新表，并刷新同步到现有的克隆。
 
-In **pgAdmin**, select your source database (**NOT** the cloned database), and from the menu bar click **Tools > Query Tool**.
+在 **pgAdmin**, 选择源数据库(非cloned 的数据库), 在菜单栏中选择 **Tools > Query Tool**.
 
-Start pgAdmin, select your source database instance, go to the **Tools** menu and select **Query Tool**.
+启动 pgAdmin, 选择您的数据库实例, 到 **Tools** 菜单并选择 **Query Tool**.
 
 .. figure:: images/25a2.png
 
-From the **Query Tool**, type the following SQL command into the editor:
+在 **Query Tool**, 输入以下 SQL 命令到edito编辑器中：
 
 .. code-block:: postgresql
   :name: products-table-sql
@@ -402,74 +400,53 @@ From the **Query Tool**, type the following SQL command into the editor:
   price numeric
   );
 
-Click :fa:`bolt` **Execute/Refresh**.
+点击 :fa:`bolt` **Execute/Refresh**.
 
 .. figure:: images/26a.png
 
-Verify the creation of the table under **Schemas > Public > Tables > products**.
+确认在源数据库中已经创建了“products”这个新表， **Schemas > Public > Tables > products**.
 
 .. note::
 
-  You may need to refresh **Tables** for the newly created table to appear.
+  您可能需要刷新 **Tables** 表才能显示新创建的表。  
 
 .. figure:: images/27a2.png
 
-Previously you created a manual snapshot on which to base your cloned database, for the refresh you will leverage the **Point in Time** capability of Era.
+在此之前，您创建了一个手动快照作为克隆数据库的基础, 为了刷新您将利用Era的 **Point in Time** 功能。
 
-The default schedule for **Log Catch Up**, configured when provisioning the source database, is every 30 minutes. Based on this schedule, you should expect to be able to refresh the database based on updates older than 30 minutes with no further action required.
+配置源数据库时，配置的默认日志同步 **Log Catch Up** 计划是每30分钟一次。根据这个计划，您应该能够根据超过30分钟的更新来刷新数据库，而不需要进一步的操作。
+在本例中，您只是在源数据库中创建了 **products** 表，因此需要手动执行日志同步操作 **Log Catch up** 来将事务日志从源数据库复制到Era。
 
-In this case, you just created the **products** table in your source database, so a manual execution of **Log Catch Up** would be required to copy transactional logs to Era from your source database.
 
-In **Era > Time Machines**, select the Time Machine instance for your source database and click **Log Catch Up > Yes**.
+在 **Era > Time Machines** , 选择源source数据库的Time Machine instance 并点击 **Log Catch Up > Yes**.
 
 .. figure:: images/27c.png
 
-Once the **Log Catchup** job completes, in **Era > Databases > Clones**, select the clone of your source database and click **Refresh**.
+一旦 **Log Catchup** 作业执行成功, 在 **Era > Databases > Clones**, 选择您刚所克隆的数据库，并点击 **Refresh**。
 
 .. figure:: images/27b2.png
 
-Refreshing to the latest available **Point in Time** is selected by default. Click **Refresh**.
+刷新至最新的可用点 **Point in Time** 点击 **Refresh**。
 
 .. figure:: images/27d.png
 
-Observe the steps taken by Era to refresh the cloned database in **Operations**.
+请观察Era刷新克隆数据库的步骤 **Operations**。
 
 .. figure:: images/27e.png
 
-Once the **Refresh Clone** job is complete, refresh the **Tables** view of your clone database in **pgAdmin** and confirm the **products** table is now present.
+完成 **Refresh Clone** 作业后，在pgAdmin中刷新您的Clone数据库的 **Tables** 视图，并确认 **products** 表现在已经存在。
 
 .. figure:: images/28a2.png
 
-In just a couple of clicks and minutes you were able to update your cloned database using the latest available production data. This same approach could be leveraged to recover absent data from a database by provisioning a clone based on a previous snapshot or point in time.
+只需几次点击和几分钟，您就可以使用最新可用的生产数据更新克隆的数据库。通过提供基于先前快照或时间点的克隆，可以利用相同的方法从数据库中恢复缺少的数据。
 
-Return to the **Dashboard** and review the critical information Era provides to administrators, including storage savings, clone aging, tasks, and alerts.
+返回仪表板 **Dashboard** 并查看Era提供给管理员的关键信息，包括存储节省、克隆时间、任务和警报。
 
 .. figure:: images/28b2.png
 
-Using the Era REST API Explorer
-+++++++++++++++++++++++++++++++
 
-Era features an "API first" architecture and provides a fully documented REST API to allow for automation and orchestration of its functions through external tools. Similar to Prism, Era also provides a Rest API Explorer to easily discover and test API functions.
 
-From the menu bar, select **Admin > REST API Explorer** from the top right.
-
-.. figure:: images/29.png
-
-Expand the different categories to view the available operations, including registering Nutanix clusters, registering and provisioning databases, cloning and refreshing databases, updating profiles and SLAs, and getting operation and alert information.
-
-As a simple test, expand **Databases > GET /databases**. This function returns JSON containing details regarding all registered and provisioned databases and requires no additional parameters.
-
-Click **Try it out > Execute**.
-
-.. figure:: images/30.png
-
-You should receive a JSON response body similar to the image below.
-
-.. figure:: images/32.png
-
-This API can be used to create powerful workflows using tools like Nutanix Calm, ServiceNow, Ansible, or others. As an example you could provision a Calm blueprint containing the web tier of an application and use a Calm eScript to invoke Era to clone an existing database and return the IP of the newly provisioned database to Calm.
-
-Takeaways
+概要
 +++++++++
 
 关于Nutanix Era的核心内容：
