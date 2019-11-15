@@ -23,37 +23,13 @@
 
 .. toctree::
   :maxdepth: 2
-  :caption: Prism Pro
-  :name: _prism_pro
+  :caption: Era
+  :name: era
   :hidden:
 
    era/era
 
-  .. toctree::
-  :maxdepth: 2
-  :caption:  Files Labs
-  :name: _files_labs
-  :hidden:
-
-  files_deploy/files_deploy
-  files_smb_share/files_smb_share
-  files_nfs_export/files_nfs_export
-  file_analytics_deploy/file_analytics_deploy
-  file_analytics_scan/file_analytics_scan
-
-  .. toctree::
-  :maxdepth: 2
-  :caption: Calm
-  :name: _calm
-  :hidden:
-
-  what_is_calm/what_is_calm
-  calm_enable/calm_enable
-  calm_projects/calm_projects
-  calm_linux/calm_linux
-  calm_win/calm_win
-
-  .. toctree::
+.. toctree::
   :maxdepth: 2
   :caption: Flow
   :name: _flow
@@ -70,7 +46,6 @@
   :caption: Optional Labs
   :name: _optional_labs
   :hidden:
-
 
 
 .. toctree::
