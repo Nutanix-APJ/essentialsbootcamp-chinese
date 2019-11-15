@@ -21,7 +21,15 @@
   prism_pro_resource_planning/prism_pro_resource_planning
   prism_pro_xplay/prism_pro_xplay
 
-.. toctree::
+  .. toctree::
+  :maxdepth: 2
+  :caption: Prism Pro
+  :name: _prism_pro
+  :hidden:
+
+   era/era
+
+//.. toctree::
   :maxdepth: 2
   :caption:  Files Labs
   :name: _files_labs
@@ -33,7 +41,7 @@
   file_analytics_deploy/file_analytics_deploy
   file_analytics_scan/file_analytics_scan
 
-.. toctree::
+//.. toctree::
   :maxdepth: 2
   :caption: Calm
   :name: _calm
@@ -102,21 +110,11 @@ What's New
 
 - 简介
 - Prism Pro
-- Files
-- Nutanix Calm
+- ERA
 - Nutanix Flow
 
 简介
 +++++++++++++
-
-- 名称
-- 熟悉 Nutanix
-
-初识化设置
-+++++++++++++
-
-- 记下使用的密码。
-- 登录虚拟桌面（基于下面的连接信息）
 
 环境说明
 +++++++++++++++++++
@@ -130,13 +128,13 @@ Nutanix Workshop旨在Nutanix Hosted POC环境中运行。 将为您的群集配
 Hosted POC 集群遵循标准命名约定:
 
 - **Cluster Name** - POC\ *XYZ*
-- **Subnet** - 10.**21**.\ *XYZ*\ .0
-- **Cluster IP** - 10.**21**.\ *XYZ*\ .37
+- **Subnet** - 10.**42**.\ *XYZ*\ .0
+- **Cluster IP** - 10.**42**.\ *XYZ*\ .37
 
 If provisioned from the marketing pool:
 - **Cluster Name** - MKT\ *XYZ*
-- **Subnet** - 10.**20**.\ *XYZ*\ .0
-- **Cluster IP** - 10.**20**.\ *XYZ*\ .37
+- **Subnet** - 10.**42**.\ *XYZ*\ .0
+- **Cluster IP** - 10.**42**.\ *XYZ*\ .37
 
 示例:
 
@@ -170,13 +168,13 @@ If provisioned from the marketing pool:
     - VLAN
     - DHCP Scope
   * - Primary
-    - 10.21.\ *XYZ*\ .1/25
+    - 10.42.\ *XYZ*\ .1/25
     - 0
-    - 10.21.\ *XYZ*\ .50-10.21.\ *XYZ*\ .124
+    - 10.42.\ *XYZ*\ .50-10.21.\ *XYZ*\ .124
   * - Secondary
-    - 10.21.\ *XYZ*\ .129/25
+    - 10.42.\ *XYZ*\ .129/25
     - *XYZ1*
-    - 10.21.\ *XYZ*\ .132-10.21.\ *XYZ*\ .253
+    - 10.42.\ *XYZ*\ .132-10.21.\ *XYZ*\ .253
 
 认证
 ...........
