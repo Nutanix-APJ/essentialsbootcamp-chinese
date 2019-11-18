@@ -1,14 +1,11 @@
 .. _era:
 
----
+-------------
 Era 数据库管理
----
+-------------
 
 *The estimated time to complete this lab is 60 minutes.*
 
-.. raw:: html
-
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/AbPMhTQ40Mw?rel=0&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 概览
 ++++++++
