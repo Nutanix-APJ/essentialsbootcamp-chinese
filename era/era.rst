@@ -23,7 +23,7 @@ This lab requires applications provisioned as part of the :ref:`windows_tools_vm
 
 If you have not yet deployed this VM, see the linked steps before proceeding with the lab.
 
-Deploying Era
+部署Era
 +++++++++++++
 
 Era是一个虚拟机appliance，可以安装在AHV或ESXi上。在这个实验室中，您将把Era部署到AHV集群中。
