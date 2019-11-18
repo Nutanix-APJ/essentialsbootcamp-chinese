@@ -108,8 +108,8 @@ If provisioned from the marketing pool:
 示例:
 
 - **Cluster Name** - POC055
-- **Subnet** - 10.21.55.0
-- **Cluster IP** - 10.21.55.37
+- **Subnet** - 10.42.55.0
+- **Cluster IP** - 10.42.55.37
 
 在整个Workshop期间，有多个实例需要用* XYZ *替换正确的子网，例如:
 
@@ -119,11 +119,11 @@ If provisioned from the marketing pool:
 
    * - IP Address
      - Description
-   * - 10.21.\ *XYZ*\ .37
+   * - 10.42.\ *XYZ*\ .37
      - Nutanix Cluster Virtual IP
-   * - 10.21.\ *XYZ*\ .39
+   * - 10.42.\ *XYZ*\ .39
      - **PC** VM IP, Prism Central
-   * - 10.21.\ *XYZ*\ .40
+   * - 10.42.\ *XYZ*\ .40
      - **DC** VM IP, NTNXLAB.local Domain Controller
 
 每个群集配置有2个可用于VM的VLAN:
@@ -210,8 +210,6 @@ Login to: https://xld-uswest1.nutanix.com (for PHX) or https://xld-useast1.nutan
 
 **Nutanix Employees** - Use your NUTANIXDC credentials
 **Non-Employees** - **Username:** POCxxx-User01 (up to POCxxx-User20), **Password:** *<Provided by Instructor>*
-
-
 
 
 Nutanix 版本信息
