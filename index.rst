@@ -37,9 +37,10 @@
 
   what_is_flow/what_is_flow
   flow_enable/flow_enable
-  flow_secure_app/flow_secure_app
   flow_isolate_environments/flow_isolate_environments
-  flow_quarantine_vm/flow_quarantine_vm
+  flow_secure_app/flow_secure_app
+  
+  //flow_quarantine_vm/flow_quarantine_vm
 
 
 .. toctree::
