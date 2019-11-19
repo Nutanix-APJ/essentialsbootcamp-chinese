@@ -177,6 +177,22 @@ Pulse Secure Access Client 下载地址
 
 https://pan.baidu.com/s/1WmeZ4NizhJpWnYBCHaBqqQ  密码:4dln。 
 
+Type: Policy Secure (UAC) or Connection Server(VPN)
+Name: X-Labs - PHX
+Server URL: xlv-uswest1.nutanix.com
+
+OR
+
+Type: Policy Secure (UAC) or Connection Server(VPN)
+Name: X-Labs - RTP
+Server URL: xlv-useast1.nutanix.com
+
+用户名和密码
+
+20 x VPN User Accounts: RTP-POC033-User01, RTP-POC033-User02 … RTP-POC033-User20 etc.
+VDI/VPN User Password: techX2019!
+
+
 
 Nutanix 版本信息
 ++++++++++++++++++++
