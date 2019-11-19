@@ -96,14 +96,9 @@ Nutanix Workshop旨在Nutanix Hosted POC环境中运行。 将为您的群集配
 
 Hosted POC 集群遵循标准命名约定:
 
-- **Cluster Name** - POC\ *XYZ*
-- **Subnet** - 10.**42**.\ *XYZ*\ .0
-- **Cluster IP** - 10.**42**.\ *XYZ*\ .37
-
-If provisioned from the marketing pool:
-- **Cluster Name** - MKT\ *XYZ*
-- **Subnet** - 10.**42**.\ *XYZ*\ .0
-- **Cluster IP** - 10.**42**.\ *XYZ*\ .37
+- **Cluster Name** - POC\ *XX*
+- **Subnet** - 10.**55**.\ *XX*\ .0
+- **Cluster IP** - 10.**55**.\ *XX*\ .37
 
 示例:
 
@@ -119,11 +114,11 @@ If provisioned from the marketing pool:
 
    * - IP Address
      - Description
-   * - 10.42.\ *XYZ*\ .37
+   * - 10.55.\ *XX*\ .37
      - Nutanix Cluster Virtual IP
-   * - 10.42.\ *XYZ*\ .39
+   * - 10.55.\ *XX*\ .39
      - **PC** VM IP, Prism Central
-   * - 10.42.\ *XYZ*\ .40
+   * - 10.55.\ *XX*\ .40
      - **DC** VM IP, NTNXLAB.local Domain Controller
 
 每个群集配置有2个可用于VM的VLAN:
@@ -137,13 +132,13 @@ If provisioned from the marketing pool:
     - VLAN
     - DHCP Scope
   * - Primary
-    - 10.42.\ *XYZ*\ .1/25
+    - 10.55.\ *XX*\ .1/25
     - 0
-    - 10.42.\ *XYZ*\ .50-10.21.\ *XYZ*\ .124
+    - 10.55.\ *XX*\ .50-10.21.\ *XYZ*\ .124
   * - Secondary
-    - 10.42.\ *XYZ*\ .129/25
-    - *XYZ1*
-    - 10.42.\ *XYZ*\ .132-10.21.\ *XYZ*\ .253
+    - 10.55.\ *XX*\ .129/25
+    - *XX1*
+    - 10.55.\ *XX*\ .132-10.21.\ *XYZ*\ .253
 
 认证
 ...........
@@ -161,55 +156,28 @@ If provisioned from the marketing pool:
      - Password
    * - Prism Element
      - admin
-     - *<Cluster Password>*
+     - *1qaz@WSX3edc$RFV*
    * - Prism Central
      - admin
-     - *<Cluster Password>*
+     - *1qaz@WSX3edc$RFV*
    * - Controller VM
      - nutanix
-     - *<Cluster Password>*
+     - *1qaz@WSX3edc$RFV*
    * - Prism Central VM
      - nutanix
-     - *<Cluster Password>*
+     - *1qaz@WSX3edc$RFV*
 
-每个群集都有一个专用的域控制器VM, **DC**, 负责为 **NTNXLAB.local** 域提供AD服务. 该域包括了以下用户和组：:
-
-
-.. list-table::
-   :widths: 25 35 40
-   :header-rows: 1
-
-   * - Group
-     - Username(s)
-     - Password
-   * - Administrators
-     - Administrator
-     - nutanix/4u
-   * - SSP Admins
-     - adminuser01-adminuser25
-     - nutanix/4u
-   * - SSP Developers
-     - devuser01-devuser25
-     - nutanix/4u
-   * - SSP Power Users
-     - poweruser01-poweruser25
-     - nutanix/4u
-   * - SSP Basic Users
-     - basicuser01-basicuser25
-     - nutanix/4u
 
 访问说明
 +++++++++++++++++++
 
-可以通过多种不同方式访问Nutanix Hosted POC环境:
+可以通过VPN方式访问Nutanix Hosted POC环境:
 
-Parallels VDI
-.................
+Pulse Secure Access Client 下载地址
 
-Login to: https://xld-uswest1.nutanix.com (for PHX) or https://xld-useast1.nutanix.com (for RTP)
+`Pulse Secure Access Client <https://pan.baidu.com/s/1WmeZ4NizhJpWnYBCHaBqqQ>`_!
 
-**Nutanix Employees** - Use your NUTANIXDC credentials
-**Non-Employees** - **Username:** POCxxx-User01 (up to POCxxx-User20), **Password:** *<Provided by Instructor>*
+https://pan.baidu.com/s/1WmeZ4NizhJpWnYBCHaBqqQ  密码:4dln。 
 
 
 Nutanix 版本信息
