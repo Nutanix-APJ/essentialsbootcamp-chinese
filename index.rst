@@ -102,9 +102,9 @@ Hosted POC 集群遵循标准命名约定:
 
 示例:
 
-- **Cluster Name** - POC055
-- **Subnet** - 10.42.55.0
-- **Cluster IP** - 10.42.55.37
+- **Cluster Name** - POC056
+- **Subnet** - 10.55.56.0
+- **Cluster IP** - 10.55.56.37
 
 在整个Workshop期间，有多个实例需要用 *XX* 替换正确的子网，例如:
 
