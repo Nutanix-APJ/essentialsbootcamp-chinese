@@ -106,7 +106,7 @@ Hosted POC 集群遵循标准命名约定:
 - **Subnet** - 10.42.55.0
 - **Cluster IP** - 10.42.55.37
 
-在整个Workshop期间，有多个实例需要用* XYZ *替换正确的子网，例如:
+在整个Workshop期间，有多个实例需要用 *XX* 替换正确的子网，例如:
 
 .. list-table::
    :widths: 25 75
@@ -134,18 +134,18 @@ Hosted POC 集群遵循标准命名约定:
   * - Primary
     - 10.55.\ *XX*\ .1/25
     - 0
-    - 10.55.\ *XX*\ .50-10.21.\ *XYZ*\ .124
+    - 10.55.\ *XX*\ .50-10.21.\ *XX*\ .124
   * - Secondary
     - 10.55.\ *XX*\ .129/25
     - *XX1*
-    - 10.55.\ *XX*\ .132-10.21.\ *XYZ*\ .253
+    - 10.55.\ *XX*\ .132-10.21.\ *XX*\ .253
 
 认证
 ...........
 
 .. note::
 
-  The *<Cluster Password>* 对每个群集都是唯一的，将由Workshop的负责人提供.
+  The *<Cluster Password>* 由Workshop的负责人提供.
 
 .. list-table::
    :widths: 25 35 40
@@ -156,16 +156,16 @@ Hosted POC 集群遵循标准命名约定:
      - Password
    * - Prism Element
      - admin
-     - *1qaz@WSX3edc$RFV*
+     - *techX2019!*
    * - Prism Central
      - admin
-     - *1qaz@WSX3edc$RFV*
+     - *techX2019!*
    * - Controller VM
      - nutanix
-     - *1qaz@WSX3edc$RFV*
+     - *techX2019!*
    * - Prism Central VM
      - nutanix
-     - *1qaz@WSX3edc$RFV*
+     - *default password*
 
 
 访问说明
