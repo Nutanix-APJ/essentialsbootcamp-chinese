@@ -96,7 +96,7 @@ Era是一个虚拟机appliance，可以安装在AHV或ESXi上。在这个实验�
 
 .. figure:: images/3c.png
 
-选择 **Primary** VLAN. 这是Era在部署新数据库时将使用的默认网络配置文件。**不要** 选择 **Manage IP Address Pool** , 因为您的AHV集群已经为该网络配置了DHCP。
+选择 Primary VLAN. 这是Era在部署新数据库时将使用的默认网络配置文件。**不要** 选择 **Manage IP Address Pool** , 因为您的AHV集群已经为该网络配置了DHCP。
 
 .. figure:: images/3d.png
 
