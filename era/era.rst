@@ -143,23 +143,23 @@ Era可用于在已注册的Nutanix集群上提供数据库服务器和数据库�
 
 点击 **Create**.
 
-选择 **Database Parameters > DEFAULT_POSTGRES_PARAMS**可看到由Era提供的PostgreSQL数据库的默认参数（保留原参数，无需修改）。
+选择 ** Database Parameters > DEFAULT_POSTGRES_PARAMS **可看到由Era提供的PostgreSQL数据库的默认参数（保留原参数，无需修改）。
 
-选择**Era > Profiles** 并点击 **Getting Started**.
+选择 **Era > Profiles** 并点击 **Getting Started**.
 
-在 **Getting Started** 页面, 点击**Provision a Database**下面的 **PostgreSQL**。
+在 **Getting Started** 页面, 点击 **Provision a Database** 下面的 **PostgreSQL**。
 
 .. figure:: images/4b2.png
 
-点击**Provision a Database**.
+点击 **Provision a Database** .
 
 .. figure:: images/4c.png
 
 选择 **PostgreSQL** engine并点击 **Next**.
 
-输入以下**Database Server** 参数:
+输入以下 **Database Server** 参数:
 
-- **Database Server** - 选择**Create New Server**
+- **Database Server** - 选择 **Create New Server**
 - **Database Server Name** - *Initials*-DBServer
 - **Compute Profile** - Lab（默认的或刚才自定义创建的Compute profile）
 - **Network Profile** - DEFAULT_OOB_NETWORK
