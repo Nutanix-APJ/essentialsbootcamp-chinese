@@ -17,7 +17,7 @@ Windows 工具 VM
 - pgAdmin
 - Chocolatey Package Manager
 
-如果指示这样做，请在 ** Lab Setup **中将此虚拟机部署到您分配的群集上。
+如果指示这样做，请在 ** Lab Setup** 中将此虚拟机部署到您分配的群集上。
 
 .. raw:: html
 
@@ -48,7 +48,7 @@ Windows 工具 VM
 
 单击 **Save** 创建VM.
 
-启动VM.
+手动启动VM.
 
 使用以下凭据通过RDP或控制台会话登录到VM：
 
