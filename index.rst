@@ -97,8 +97,8 @@ Nutanix Workshop旨在Nutanix Hosted POC环境中运行。 将为您的群集配
 Hosted POC 集群遵循标准命名约定:
 
 - **Cluster Name** - POC\ *XX*
-- **Subnet** - 10.**55**.\ *XX*\ .0
-- **Cluster IP** - 10.**55**.\ *XX*\ .37
+- **Subnet** - 10. **55** .\ *XX*\ .0
+- **Cluster IP** - 10. **55** .\ *XX*\ .37
 
 示例:
 
@@ -174,8 +174,6 @@ Hosted POC 集群遵循标准命名约定:
 可以通过VPN方式访问Nutanix Hosted POC环境:
 
 Pulse Secure Access Client 下载地址
-
-`Pulse Secure Access Client <https://pan.baidu.com/s/1WmeZ4NizhJpWnYBCHaBqqQ>`_!
 
 https://pan.baidu.com/s/1WmeZ4NizhJpWnYBCHaBqqQ  密码:4dln。 
 
