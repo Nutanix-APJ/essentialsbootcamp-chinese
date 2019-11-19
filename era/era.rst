@@ -59,7 +59,7 @@ Era是一个虚拟机appliance，可以安装在AHV或ESXi上。在这个实验�
 注册集群
 +++++++++++++++++++++
 
-在 **Prism Central > VMs > List**, 识别并确定刚才创建的ERA虚拟机的ip地址，使用 **IP Addresses** 列。
+在 **Prism Central > VMs > List**, 在 **IP Addresses** 列,识别并确定刚才创建的ERA虚拟机的ip地址，。
 
 在浏览器中打开 \https://*ERA-VM-IP:8443*/ 。
 
