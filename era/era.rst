@@ -241,9 +241,9 @@ Era可用于在已注册的Nutanix集群上提供数据库服务器和数据库�
 
 .. note::
 
-  If installed, you can also use a local instance of pgAdmin. The Tools VM is provided to ensure a consistent experience.
+  如果已安装，您也可以用本地的 pgAdmin. Tools VM 是为了一致的用户体验。
 
-在 **Browser**下面, 右击 **Servers** 并选择 **Create > Server...** .
+在 **Browser** 下面, 右击 **Servers** 并选择 **Create > Server...** 。
 
 .. figure:: images/5c.png
 
@@ -259,7 +259,7 @@ Era可用于在已注册的Nutanix集群上提供数据库服务器和数据库�
 
 .. figure:: images/5d2.png
 
-展开 *Initials*\ **-DBServer > Databases** a并注意到Era已经部署了一个空的数据库。
+展开 *Initials*\ **-DBServer > Databases** 并注意到Era已经部署了一个空的数据库。
 
 .. figure:: images/5h2.png
 
@@ -313,7 +313,7 @@ Era可用于在已注册的Nutanix集群上提供数据库服务器和数据库�
 
 现在您已经创建了一个源数据库，您可以使用Era Time Machine轻松地克隆它。数据库克隆有助于开发和测试目的，允许非生产环境在不影响生产操作的情况下利用生产数据。Era克隆利用了nutanix本地写时复制克隆技术，允许零字节的数据库克隆。这种空间效率可以显著降低支持大量数据库克隆的环境的存储成本。
 
-在 **Era > Time Machines**, 为你的数据库实例选择 Time Machine instance，如以下图中的XYZ_LabDB_tm。
+在 **Era > Time Machines** , 为你的数据库实例选择 Time Machine instance，如以下图中的XYZ_LabDB_tm。
 
 .. figure:: images/16a2.png
 
@@ -370,8 +370,7 @@ Era可用于在已注册的Nutanix集群上提供数据库服务器和数据库�
 
 .. figure:: images/21b.png
 
-在完成克隆操作之后，您可以按照前一节中描述的那样连接到克隆实例，并连接到数据库。, `Connecting to the Database`_.
-
+在完成克隆操作之后，您可以按照前一节中描述的那样连接到克隆实例，并连接到数据库。
 .. figure:: images/23a2.png
 
 新创建的克隆数据库现在可以使用了。
