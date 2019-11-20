@@ -156,16 +156,16 @@ Hosted POC 集群遵循标准命名约定:
      - Password
    * - Prism Element
      - admin
-     - *techX2019!*
+     - *<password>*
    * - Prism Central
      - admin
-     - *techX2019!*
+     - *<password>*
    * - Controller VM
      - nutanix
-     - *techX2019!*
+     - *<password>*
    * - Prism Central VM
      - nutanix
-     - *default password*
+     - *<password>*
 
 
 访问说明
@@ -189,8 +189,8 @@ Server URL: xlv-useast1.nutanix.com
 
 用户名和密码
 
-20 x VPN User Accounts: RTP-POC033-User01, RTP-POC033-User02 … RTP-POC033-User20 etc.
-VDI/VPN User Password: techX2019!
+20 x VPN User Accounts: RTP-POC0XX-User01, RTP-POC0XX-User02 … RTP-POC0XX-User20 etc.
+VDI/VPN User Password: *<password>*
 
 
 
