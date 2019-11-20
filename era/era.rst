@@ -38,6 +38,7 @@ Era是一个虚拟机appliance，可以安装在AHV或ESXi上。在这个实验�
 
 - **Name** - *Initials*-Era
 - **Description** - (可选) 该vm的描述
+- **Timezone** - (UTC)UTC
 - **vCPU(s)** - 4
 - **Number of Cores per vCPU** - 1
 - **Memory** - 16 GiB
