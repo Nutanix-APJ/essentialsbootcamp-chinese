@@ -19,9 +19,9 @@ Nutanix Era以一键式数据库配置和复制数据管理（CDM）作为其第
 实验准备
 +++++++++
 
-This lab requires applications provisioned as part of the :ref:`windows_tools_vm`.
+如果是通过VPN连接国外实验环境可以通过这个链接安装工具Windows虚拟机 :ref:`windows_tools_vm`.
 
-If you have not yet deployed this VM, see the linked steps before proceeding with the lab.
+此外，也可以在自己的电脑上安装Postgresql数据库的管理工具pgadmin，下载地址为：https://www.pgadmin.org/download/ ，根据您客户端系统选择要安装的软件类型。
 
 部署Era
 +++++++++++++
